@@ -1,43 +1,7 @@
-
 #banner {
     width: 100%;
     height: 260px;
     object-fit: cover;
     font-weight: normal;
     text-align: center;
-}
-
-body {
-    background : lightgray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Fills page height and width */
-    min-height: 100vh; 
-    min-width: 100vw;
-}
-
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
-    margin: 50px;
-    background: #fff;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 35px rgba(0,0,0,0.2);
-
-}
-
-.container .leftBar {
-    position: relative;
-    background: #003147;
-    padding: 40px;
-}
-
-.container .rightBar {
-    position: relative;
-    background: #fff;
-    padding: 40px;
 }

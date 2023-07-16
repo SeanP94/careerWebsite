@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-#resume  {
+body {
     background : lightgray;
     display: flex;
     justify-content: center;
@@ -21,10 +21,13 @@
     position: relative;
     width: 100%;
     max-width: 1000px;
-    min-height: 100px;
+    min-height: 1000px;
+    margin: 50px;
     background: #fff;
     display: grid;
-    grid-template-columns: 1fr 2fr;  
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 35px rgba(0,0,0,0.2);
+
 }
 
 .container .leftBar {

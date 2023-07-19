@@ -20,7 +20,6 @@
 }
 
 .leftCol li {
-    text-align: left;
     color: white;
     background-color: #2e3039;
     border-color: #565c75 ;
@@ -39,7 +38,6 @@
     height: 250px;
     border-radius: 50%;
     overflow: hidden;
-
 }
 
 .rightCol {
@@ -48,3 +46,11 @@
     height: 100vh;
 }
 
+.myResources {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.myResources  h4{
+    padding-left: 35px;
+}

@@ -9,18 +9,21 @@
     </head>
     <body class="bg-primary">
         {% include 'navbar.html' %}
-        <div id="resume" class="container p-3 mb-2 bg-secondary text-white">
-            <div class="flex-row ">
-                <div class="border ">
+        <!--
+            container is the reason that this is staying centered.
+            so use this for now :) 
+
+            Note, that container is handling the width. So when you remove this later it'll change.
+
+            also note containter is the reason why 
+        -->
+        <div id="resume" class="container bg-secondary text-white centeredColumn">
+            <div class="row">
+                <div class="resumeCol border p-2 col-5">
                     1 of 2
                 </div>
-                <div class="border">
+                <div class="resumeCol border p-2 col-7 ">
                     2 of 2
-                </div>
-                <div class="flex-row">
-                    <div class="border">
-                        1 of 2?
-                    </div>
                 </div>
             </div>
         </div>

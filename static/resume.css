@@ -1,12 +1,27 @@
 .centeredColumn {
-    /* max-width: 100px;
-    min-width: 19px;
-    height: 100px; */
-    /* Sets to go to bottom of vertical height */
     height: 100vh; 
-    width: 70%;   
+    width: 70%;  
+    box-shadow: 1px 5px 5px black;
 }
 
-.resumeCol {
+.mainBackground {
+    background-image: linear-gradient(#556366, #292a30)!important;
+}
+
+.leftCol {
+    color: black;
+    background-color: #2e3039;
     height: 100vh;
+    
+}
+
+.rightCol {
+    color: black;
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.pfp > img {
+    width: 100px;
+    height: 100px;
 }

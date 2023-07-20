@@ -1,5 +1,5 @@
 .centeredColumn {
-    height: 100vh; 
+    height: 95vh; 
     width: 70%;  
     box-shadow: 1px 5px 5px black;
 }
@@ -12,7 +12,7 @@
     color: white;
     text-align: center;
     background-color: #2e3039;
-    height: 100vh;
+    height: 95vh;
 }
 
 .leftCol ul {
@@ -49,30 +49,27 @@
     padding-left: 35px;
 }
 
+/* Right Column */
+
 
 .rightCol {
     color: black;
     background-color: whitesmoke !important;
-    height: 100vh;
+    height: 95vh;
+    overflow: scroll;
 }
 
 .rightCol h2 {
     color: #2e3039; /* Same gray as rightCol */
-    padding-bottom: 20px;
+
 }
 
 .rightCol p {
     color : black;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #565c75;
 }
 
 .infoList {
     background-color: whitesmoke !important;
-}
-
-.rightCol ul {
-    color : black;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #565c75;
 }

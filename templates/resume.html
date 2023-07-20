@@ -10,14 +10,7 @@
     </head>
     <body class="mainBackground">
         {% include 'navbar.html' %}
-        <!--
-            container is the reason that this is staying centered.
-            so use this for now :) 
 
-            Note, that container is handling the width. So when you remove this later it'll change.
-
-            also note containter is the reason why 
-        -->
         <div id="resume" class="container text-white centeredColumn">
             <div class="row">
                 <div class="leftCol p-2 col-3">
@@ -25,7 +18,7 @@
                         <img class="align-items-center" src="static/pfp.jpg">
                         <div class="p-2 bLine" >
                             <h3><b>Sean Perry</b></h3>
-                            <h4>Data Engineer</h4>
+                            <h4>Software Engineer</h4>
                         </div>
                         <div class="myResources">
                             <h4>Contact Info</h4>
@@ -59,93 +52,106 @@
                 </div>
                 <div class="rightCol p-2 col-9">
                     <div class="container">
-                        <h2>Summary</h2>
-                        <p>
-                            &nbsp; Data-oriented professional with experience with data classification, data cleansing, extracting information, utilizing SQL and pythons data library. I am open and willing to develop new skill sets and utilize my current skills in new ways. I am aiming to leverage both my skills and willingness to learn to successfully fill the role on your team.
-                        </p>        
-
-                        <h2>Skillset</h2>
-                        <ul class="list-group list-group-flush infoList bLine">
-                            <li class="list-group-item infoList d-flex flex-row">
-                                <div class="p-2" ><b>Programming Languages<br>Experienced<br>Working Familiarity</b></div>
-                                <div class="p-2"><br>Python, MySQL, C++<br>C#, C, GO, Javascript, HTML, CSS, Microsoft SQL Server</div>
-                            </li>
-                            <li class="list-group-item infoList d-flex flex-row">
-                                <div class="p-2"><b>Signficant Libraries</b></div>
-                                <div class="p-2">Pandas, Numpy, Scikit-Learnm, Seaborn, Flask, Matplotlib, Tkinter</div>
-                            </li>
-                            <li class="list-group-item infoList d-flex flex-row">
-                                <div class="p-2"><b>General Skills</b></div>
-                                <div class="p-2">Linux, Windows, Software Development, Excel, Data Analyst, Data Cleansing, Pipeline Development, Restful API's, Database Design, Team Management</div>
-                            </li>
-                        </ul>
-
-                        <h2>Job Experience</h2>
-                        <ul class="list-group list-group-flush infoList">
-                            <li class="list-group-item infoList">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <h5>PIRCH</h5>
-                                        <h6><i>Data Analyst</i></h6>
-                                        10/2021 - Present
+                        <!-- Summary -->
+                        <div >
+                            <h2>Summary</h2>
+                            <p class="bLine"> <!-- I Think Bootstrap does somethin to p's padding-bottom-->
+                                &nbsp; Data-oriented professional with experience with data classification, data cleansing, extracting information, utilizing SQL and pythons data library. I am open and willing to develop new skill sets and utilize my current skills in new ways. I am aiming to leverage both my skills and willingness to learn to successfully fill the role on your team.
+                            </p>      
+                        </div>
+                        <!-- Skillset Rows -->
+                        <div class="preTitlePadding">
+                            <h2>Skillset</h2>
+                            <ul class="list-group list-group-flush bLine">
+                                <li class="list-group-item infoList">
+                                    <div class="row">
+                                        <div class="col-3"><b>Languages<br>Experienced<br>Working Familiarity</b></div>
+                                        <div class="col-9"><br>Python, MySQL, C++<br>C#, C, GO, Javascript, HTML, CSS, Microsoft SQL Server</div>
                                     </div>
-                                    <div class="col-9">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item infoList">
-                                                Performed data analysis of large datasets using techniques such as linear regression and predictive modeling.
-                                            </li>
-                                            <li class="list-group-item infoList">
-                                                Responsible for processing and cleaning incoming data from over 300 sources/vendors.
-                                            </li>
-                                            <li class="list-group-item infoList">
-                                                Optimized existing processes by leveraging automation tools such as Python scripting language
-                                            </li>
-                                            <li class="list-group-item infoList">
-                                                Created SQL queries to extract data from multiple sources for reporting purposes
-                                            </li>
-                                        </ul>
+                                </li>
+                                <li class="list-group-item infoList">
+                                    <div class="row">
+                                        <div class="col-3"><b>Signficant Libraries</b></div>
+                                        <div class="col-9">Pandas, Numpy, Scikit-Learnm, Seaborn, Flask, Matplotlib, Tkinter</div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item infoList">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <h5>Waterstone Faucets</h5>
-                                        <h6><i>CAD Drafter</i></h6>
-                                        10/2019 - 10/2021
+                                </li>
+                                <li class="list-group-item infoList d-flex flex-row">
+                                    <div class="row">
+                                        <div class="col-3"><b>General Skills</b></div>
+                                        <div class="col-9">Linux, Windows, Software Development, Excel, Data Analyst, Data Cleansing, Pipeline Development, Restful API's, Database Design, Team Management</div>
                                     </div>
-                                    <div class="col-9">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item infoList">
-                                                Designed mechanical drafts and helped with minor mechanical engineering tasks.
-                                            </li>
-                                            <li class="list-group-item infoList">
-                                                Utilized Javascript, HTML, and CSS to work on functionality on the company website.
-                                            </li>
-                                        </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Job Experience Rows -->
+                        <div class="preTitlePadding">
+                            <h2>Job Experience</h2>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item infoList">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <h5>PIRCH</h5>
+                                            <h6><i>Data Analyst</i></h6>
+                                            10/2021 - Present
+                                        </div>
+                                        <div class="col-9">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item infoList">
+                                                    Performed data analysis of large datasets using techniques such as linear regression and predictive modeling.
+                                                </li>
+                                                <li class="list-group-item infoList">
+                                                    Responsible for processing and cleaning incoming data from over 300 sources/vendors.
+                                                </li>
+                                                <li class="list-group-item infoList">
+                                                    Optimized existing processes by leveraging automation tools such as Python scripting language
+                                                </li>
+                                                <li class="list-group-item infoList">
+                                                    Created SQL queries to extract data from multiple sources for reporting purposes
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li class="list-group-item infoList">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <h5>Pacific Sales</h5>
-                                        <h6><i>Customer Service Supervisor</i></h6>
-                                        10/2016 - 10/2019
+                                </li>
+                                <li class="list-group-item infoList">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <h5>Waterstone Faucets</h5>
+                                            <h6><i>CAD Drafter</i></h6>
+                                            10/2019 - 10/2021
+                                        </div>
+                                        <div class="col-9">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item infoList">
+                                                    Designed mechanical drafts and helped with minor mechanical engineering tasks.
+                                                </li>
+                                                <li class="list-group-item infoList">
+                                                    Utilized Javascript, HTML, and CSS to work on functionality on the company website.
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="col-9">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item infoList ">
-                                                Designed mechanical drafts and helped with minor mechanical engineering tasks.
-                                            </li>
-                                            <li class="list-group-item infoList">
-                                                Utilized Javascript, HTML, and CSS to work on functionality on the company website.
-                                            </li>
-                                        </ul>
+                                </li>
+                                <li class="list-group-item infoList">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <h5>Pacific Sales</h5>
+                                            <h6><i>Customer Service Supervisor</i></h6>
+                                            10/2016 - 10/2019
+                                        </div>
+                                        <div class="col-9">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item infoList ">
+                                                    Designed mechanical drafts and helped with minor mechanical engineering tasks.
+                                                </li>
+                                                <li class="list-group-item infoList">
+                                                    Utilized Javascript, HTML, and CSS to work on functionality on the company website.
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

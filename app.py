@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 #export FLASK_APP=app.py ; export FLASK_ENV=development ;flask run
-
+#export FLASK_DB=sqlite:///test.db
 app = Flask(__name__)
 
 

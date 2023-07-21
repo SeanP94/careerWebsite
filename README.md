@@ -9,4 +9,12 @@ The primary focus is to learn Flask, and get familiar again with CSS and HTML. S
 
 ---
 TODO:
-- Build the main page and resume portion of website. ETA is hopefully end of July.
+- Relearn SQLAlchemy and integrate it and fill the DB (Temporarily use Sqlite, use Postgres)
+- - Then go back and create a better Resume html form
+- Create Website typical layout html
+- - Build main page (Make it kind of like a Blog)
+
+---
+DONE:
+- Resume Layout complete!
+- - TODO: Awaiting SQL integration before making HTML more templated.

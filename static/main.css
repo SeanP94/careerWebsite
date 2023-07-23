@@ -5,3 +5,14 @@
     font-weight: normal;
     text-align: center;
 }
+
+/* Controls the main layout of the website. */
+.background {
+    background-image: linear-gradient(white, whitesmoke)!important;
+}
+
+.mainCode {
+    /* On change for height, change this to navbar.html's navbar equal to  (navbar-height - 100) # 100 - 5 Curr. */
+    height: 95vh; 
+    color: #1c1c1c;
+}

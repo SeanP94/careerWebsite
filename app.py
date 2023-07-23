@@ -6,12 +6,9 @@ app = Flask(__name__)
 
 # Main page
 @app.route("/")
-def homePage_() :
-    return render_template('homepage.html')
-
 @app.route("/home")
 def homePage() :
-    return render_template('generic.html', pageTitle='MainPage')
+    return render_template('home.html', pageTitle='Home Page')
 
 
 @app.route("/resume")

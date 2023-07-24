@@ -16,3 +16,20 @@
     height: 95vh; 
     color: #1c1c1c;
 }
+
+
+/* login.html */
+
+.loginBox {
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 50px;
+    width: 50%;
+    height: 40%;
+    box-shadow: 1px 3px 3px #565c75;
+    padding: 50px;
+}
+
+.loginBox > h2 {
+    color: #292a30;
+}

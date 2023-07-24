@@ -1,28 +1,24 @@
-<!DOCTYPE html> 
-<html lang="en">
-    <header>
-        {% include 'header.html' %}
-        <title>
-            {{ pageTitle }}
-        </title>
-    </header>
-    <body class="background">
-        {% include 'navbar.html' %}
-        <div class="mainCode container">
-            <div class="loginBox">
-                <form class="container">
-                    <div class=" mb-3">
-                      <label for="loginUsername" class="form-label"><h2>Username</h2></label>
-                      <input type="text" class="form-control" id="loginUsername" aria-describedby="emailHelp">
-                    </div>
-                    <div class="mb-3">
-                      <label for="loginPassword" class="form-label"><h2>Password</h2></label>
-                      <input type="password" class="form-control" id="loginPassword">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
+
+{% extends 'base.html' %}
+
+<!-- Title Here! -->
+{% block title %}
+    Login Screen
+{% endblock %}
+
+<!-- Code Here! -->
+{% block main %}
+    <div class="loginBox">
+        <form class="container ">
+            <div class=" mb-3">
+            <label for="loginUsername" class="form-label"><h2>Username</h2></label>
+            <input type="text" class="form-control" id="loginUsername" aria-describedby="emailHelp">
             </div>
-        </div>
-    </body>
-    {% include 'script.html' %}
-</html>
+            <div class="mb-3">
+            <label for="loginPassword" class="form-label"><h2>Password</h2></label>
+            <input type="password" class="form-control" id="loginPassword">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock %}

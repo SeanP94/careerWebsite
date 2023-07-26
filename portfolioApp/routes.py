@@ -12,6 +12,7 @@ def homePage() :
 def resume_page():
     return render_template('resume.html')
 
+
 @app.route("/login")
 def login_page():
     return render_template('login.html')

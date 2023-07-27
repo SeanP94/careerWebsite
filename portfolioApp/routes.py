@@ -1,6 +1,7 @@
 from portfolioApp import app
 from flask import render_template
 from portfolioApp.models import FirstTable
+import portfolioApp.forms as forms
 
 @app.route("/")
 @app.route("/home")
@@ -12,7 +13,14 @@ def homePage() :
 def resume_page():
     return render_template('resume.html')
 
-
 @app.route("/login")
 def login_page():
-    return render_template('login.html')
+    form = forms.LoginUser()
+
+    return render_template('login.html', form=form)
+
+@app.route("/createuser")
+def register_page():
+    form = forms.CreateUser()
+
+    return render_template('createuser.html', form=form)

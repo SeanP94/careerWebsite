@@ -8,3 +8,10 @@ def homePage(request):
 
 def resumePage(request):
     return render(request, 'resume.html')
+
+def loginPage(request):
+    return render(request, 'login.html')
+
+def createAccountPage(request):
+    return render(request, 'createuser.html')
+

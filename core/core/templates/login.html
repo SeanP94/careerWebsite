@@ -9,25 +9,10 @@
 <!-- Code Here! -->
 {% block main %}
     <div class="loginBox">
-        <!-- <form class="container ">
-            <div class=" mb-3">
-            <label for="loginUsername" class="form-label"><h2>Username</h2></label>
-            <input type="text" class="form-control" id="loginUsername" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-            <label for="loginPassword" class="form-label"><h2>Password</h2></label>
-            <input type="password" class="form-control" id="loginPassword">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form> -->
+
         <div class="container">
             <form method="POST" class="form-register">
-                {{ form.username.label() }}
-                {{ form.username(class="form-control", placeholder="User Name") }}
-                {{ form.password.label() }}
-                {{ form.password(class="form-control", placeholder="Password") }}
-                <br>
-                {{ form.submit(class="btn btn-lg btn-block btn-primary") }}
+
             </form>
         </div>
     </div>
